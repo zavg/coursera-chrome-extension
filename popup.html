@@ -1,0 +1,55 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Coursera Helper</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .wrap {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        body {
+            min-width: 600px;
+        }
+
+        .logo {
+            height: 80px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+    <script id="item-template" type="text/html">
+        <ul class='media-list'>
+            <li class='media'>
+                <a id='{id}' class='pull-left' href='#'><img class='media-object logo' src='{logoUrl}'></a>
+
+                <div class='media-body'><h4 class='media-heading'>{name}</h4>
+
+                    <p>{total} (viewed {viewed}, remained {remained})</p>
+
+                    <div class='progress'>
+                        <div class='progress-bar {color}' role='progressbar' aria-valuenow='{progress}'
+                             aria-valuemin='0'
+                             aria-valuemax='100' style='width: {progress}%;'>
+                            <span class='sr-only'>{progress}% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </script>
+    <script id="alert" type="text/html">
+        <div id="update-alert" class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            Information was updated!
+        </div>
+    </script>
+</head>
+<body>
+<div class="container wrap">
+</div>
+</body>
+</html>
+
