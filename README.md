@@ -1,9 +1,9 @@
-coursera-chrome-extension
+Coursera Chrome extrension 
 =========================
 
-Coursera Helper chrome extrension 
-
 This extension is dedicated to Coursera-addicted people and allows them to track their Coursera video lectures progress.
+
+![alt tag](http://habrastorage.org/storage3/bcb/bed/d14/bcbbedd14c7c5ebb1c9bd5eeadd860c4.png)
 
 Enter to the video lectures page of the certain course and press the extension button - it will record your current state (total time of lectures during the course, the time you have already spent watching the lections and the remained time).
 
