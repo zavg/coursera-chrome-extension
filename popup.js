@@ -45,7 +45,7 @@ function getCourseInfo(callback) {
 
 function renderTime(time) {
 
-    return Math.round(time / 3600) + " h "
+    return Math.floor(time / 3600) + " h "
          + Math.round(time % 3600 / 60) + " min";
 }
 
