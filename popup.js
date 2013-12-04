@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
             getCourseInfo(function (updatedData) {
                 var courses = {};
                 chrome.storage.sync.get("courses", function (data) {
-                    console.log(data);
                     if (data.courses)
                         courses = JSON.parse(data.courses);
                     if (updatedData) {
