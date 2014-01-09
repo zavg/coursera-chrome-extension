@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 chrome.storage.sync.get("courses", function (data) {
                     if (data.courses)
                         courses = JSON.parse(data.courses);
-                    console.log(updatedData);
                     if (updatedData) {
                         $('.container').append($('#alert').html());
                         courses[updatedData.id] = updatedData;
