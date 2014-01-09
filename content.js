@@ -31,7 +31,8 @@ function getCourseInfo() {
         instructor:$('.course-topbanner-instructor').text()
     };
     if (!courseInfo.name) return null;
-    courseInfo.id = (/coursera\.org\/([^\/]+)/.exec(courseInfo.courseUrl))[1];
+    console.log(courseInfo);
+    courseInfo.id = courseInfo.courseUrl.replace(/\//g,'_');
     courseInfo.viewed = courseInfo.unviewed = courseInfo.total = 0;
     $('.viewed .lecture-link').each(function () {
         courseInfo.viewed += parseTime($(this).text());
