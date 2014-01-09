@@ -3,7 +3,7 @@
 
   "name": "Coursera Helper",
   "description": "This extension helps to organize your time on Coursera",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
     "default_icon": "coursera_icon.png",
